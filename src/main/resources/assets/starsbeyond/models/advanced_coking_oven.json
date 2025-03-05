@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "starsbeyond:block/advanced_coking_oven_front",
+    "side": "starsbeyond:block/advanced_coking_oven_side",
+    "top": "starsbeyond:block/advanced_coking_oven_top"
+  }
+}

@@ -21,7 +21,7 @@ public class SBBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, StarsBeyond.MOD_ID);
 
     public static final RegistryObject<Block> ADVANCED_COKING_OVEN = registerBlock("advanced_coking_oven",
-            () -> new AdvancedCokingOvenBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(1f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(1f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

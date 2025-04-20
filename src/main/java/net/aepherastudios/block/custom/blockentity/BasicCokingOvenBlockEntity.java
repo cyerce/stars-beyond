@@ -38,7 +38,7 @@ public class BasicCokingOvenBlockEntity extends BlockEntity implements MenuProvi
     public static final int SECONDARY_OUT_SLOT = 3;
     public static final int BUCKET_IN_SLOT = 4;
     public static final int BUCKET_OUT_SLOT = 5;
-    public static final int FlUED_SLOT = 7;
+    public static final int FLUID_SLOT = 7;
 
     @Override
     public Component getDisplayName() {

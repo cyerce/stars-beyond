@@ -5,6 +5,7 @@ import net.aepherastudios.block.SBBlocks;
 import net.aepherastudios.block.custom.blockentity.SBBlockEntities;
 import net.aepherastudios.item.SBCreativeModeTabs;
 import net.aepherastudios.item.SBItems;
+import net.aepherastudios.recipe.SBRecipes;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -28,8 +29,11 @@ public class StarsBeyond {
 
         SBItems.register(modEventBus);
         SBBlocks.register(modEventBus);
+
         SBCreativeModeTabs.register(modEventBus);
+
         SBBlockEntities.register(modEventBus);
+        SBRecipes.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);

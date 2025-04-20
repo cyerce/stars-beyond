@@ -12,10 +12,6 @@ public class SBBlockEntities {
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES =
             DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, StarsBeyond.MOD_ID);
 
-    public static final RegistryObject<BlockEntityType<AdvancedCokingOvenBlockEntity>> ADVANCED_COKING_OVEN_BE =
-            BLOCK_ENTITIES.register("advanced_coking_oven_block_entity", () ->
-                    BlockEntityType.Builder.of(AdvancedCokingOvenBlockEntity::new,
-                            SBBlocks.ADVANCED_COKING_OVEN.get()).build(null));
 
 
     public static void register(IEventBus eventBus) {

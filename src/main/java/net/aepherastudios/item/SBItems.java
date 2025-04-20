@@ -13,7 +13,6 @@ public class SBItems {
 
     public static final RegistryObject<Item> ALNICO_INGOT = ITEMS.register("alnico_ingot", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ALUMINUM_INGOT = ITEMS.register("aluminum_ingot", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> AMERICIUM_INGOT = ITEMS.register("americium_ingot", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BERYLLIUM_INGOT = ITEMS.register("beryllium_ingot", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BARIUM_INGOT = ITEMS.register("barium_ingot", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BISMUTH_INGOT = ITEMS.register("bismuth_ingot", () -> new Item(new Item.Properties()));
@@ -68,6 +67,60 @@ public class SBItems {
     public static final RegistryObject<Item> VANADIUM_INGOT = ITEMS.register("vanadium_ingot", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ZINC_INGOT = ITEMS.register("zinc_ingot", () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> ALNICO_NUGGET = ITEMS.register("alnico_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ALUMINUM_NUGGET = ITEMS.register("aluminum_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BERYLLIUM_NUGGET = ITEMS.register("beryllium_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BARIUM_NUGGET = ITEMS.register("barium_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BISMUTH_NUGGET = ITEMS.register("bismuth_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CADMIUM_NUGGET = ITEMS.register("cadmium_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CAESIUM_NUGGET = ITEMS.register("caesium_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CALCIUM_NUGGET = ITEMS.register("calcium_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHROMIUM_NUGGET = ITEMS.register("chromium_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CERIUM_NUGGET = ITEMS.register("cerium_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> COBALT_NUGGET = ITEMS.register("cobalt_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CONSTANTAN_NUGGET = ITEMS.register("constantan_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CUPRONICKEL_NUGGET = ITEMS.register("cupronickel_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> DYSPROSIUM_NUGGET = ITEMS.register("dysprosium_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ELECTRUM_NUGGET = ITEMS.register("electrum_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> EUROPIUM_NUGGET = ITEMS.register("europium_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> INVAR_NUGGET = ITEMS.register("invar_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> IRIDIUM_NUGGET = ITEMS.register("iridium_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LEAD_NUGGET = ITEMS.register("lead_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LITHIUM_NUGGET = ITEMS.register("lithium_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LITHIUM_6_NUGGET = ITEMS.register("lithium_6_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LITHIUM_7_NUGGET = ITEMS.register("lithium_7_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MAGNESIUM_NUGGET = ITEMS.register("magnesium_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MOLYBDENUM_NUGGET = ITEMS.register("molybdenum_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> NEPTUNIUM_NUGGET = ITEMS.register("neptunium_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> NEODYMIUM_NUGGET = ITEMS.register("neodymium_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> NICKEL_NUGGET = ITEMS.register("nickel_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> NIOBIUM_NUGGET = ITEMS.register("niobium_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> OSMIUM_NUGGET = ITEMS.register("osmium_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PALLADIUM_NUGGET = ITEMS.register("palladium_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PLATINUM_NUGGET = ITEMS.register("platinum_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PLUTONIUM_238_NUGGET = ITEMS.register("plutonium_238_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PLUTONIUM_239_NUGGET = ITEMS.register("plutonium_239_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POTASSIUM_NUGGET = ITEMS.register("potassium_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ROSE_GOLD_NUGGET = ITEMS.register("rose_gold_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RUBIDIUM_NUGGET = ITEMS.register("rubidium_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SILVER_NUGGET = ITEMS.register("silver_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> STABALLOY_NUGGET = ITEMS.register("staballoy_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> STAINLESS_STEEL_NUGGET = ITEMS.register("stainless_steel_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> STEEL_NUGGET = ITEMS.register("steel_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TANTALUM_NUGGET = ITEMS.register("tantalum_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> THALLIUM_NUGGET = ITEMS.register("thallium_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> THORIUM_NUGGET = ITEMS.register("thorium_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TIN_NUGGET = ITEMS.register("tin_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TITANIUM_NUGGET = ITEMS.register("titanium_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TUNGSTEN_NUGGET = ITEMS.register("tungsten_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> URANIUM_NUGGET = ITEMS.register("uranium_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> URANIUM_235_NUGGET = ITEMS.register("uranium_235_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> URANIUM_238_NUGGET = ITEMS.register("uranium_238_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> URANIUM_233_NUGGET = ITEMS.register("uranium_233_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> URANIUM_239_NUGGET = ITEMS.register("uranium_239_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> VANADIUM_NUGGET = ITEMS.register("vanadium_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ZINC_NUGGET = ITEMS.register("zinc_nugget", () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> NUCLEAR_WARHEAD = ITEMS.register("nuclear_warhead", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> THERMONUCLEAR_WARHEAD = ITEMS.register("thermonuclear_warhead", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CONVENTIONAL_WARHEAD = ITEMS.register("conventional_warhead", () -> new Item(new Item.Properties()));
@@ -76,6 +129,9 @@ public class SBItems {
     public static final RegistryObject<Item> SMALL_CONVENTIONAL_WARHEAD = ITEMS.register("small_conventional_warhead", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SMALL_INCENDIARY_WARHEAD = ITEMS.register("small_incendiary_warhead", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SMALL_CHEMICAL_WARHEAD = ITEMS.register("small_chemical_warhead", () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> REFACTORY_CLAY_BALL = ITEMS.register("refactory_clay_ball", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> REFACTORY_BRICK = ITEMS.register("refactory_brick", () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

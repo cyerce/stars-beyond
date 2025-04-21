@@ -14,12 +14,12 @@ import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
-public class BasicCokingOvenRecipe implements Recipe<SimpleContainer> {
+public class CokingOvenRecipe implements Recipe<SimpleContainer> {
     private final NonNullList<Ingredient> inputItems;
     private final ItemStack output;
     private final ResourceLocation id;
 
-    public BasicCokingOvenRecipe(ResourceLocation id, ItemStack output, NonNullList<Ingredient> inputItems){
+    public CokingOvenRecipe(ResourceLocation id, ItemStack output, NonNullList<Ingredient> inputItems){
         this.inputItems = inputItems;
         this.output = output;
         this.id = id;
@@ -45,7 +45,7 @@ public class BasicCokingOvenRecipe implements Recipe<SimpleContainer> {
 
     @Override
     public ItemStack getResultItem(RegistryAccess registryAccess) {
-        return null;
+        return this.output;
     }
 
     @Override
@@ -60,7 +60,7 @@ public class BasicCokingOvenRecipe implements Recipe<SimpleContainer> {
 
     @Override
     public RecipeSerializer<?> getSerializer() {
-        return null;
+        return SBRecipes.COKING_OVEN_SERIALIZER.get();
     }
 
     @Override
@@ -68,20 +68,20 @@ public class BasicCokingOvenRecipe implements Recipe<SimpleContainer> {
         return Type.INSTANCE;
     }
 
-    public static class Type implements RecipeType<BasicCokingOvenRecipe>{
+    public static class Type implements RecipeType<CokingOvenRecipe>{
         private Type() {}
 
         public static final Type INSTANCE = new Type();
         public static final String ID = "basic_coking_oven";
     }
 
-    public static class Serializer implements RecipeSerializer<BasicCokingOvenRecipe>{
+    public static class Serializer implements RecipeSerializer<CokingOvenRecipe>{
         public static final Serializer INSTANCE = new Serializer();
         public static final ResourceLocation ID =
                 new ResourceLocation(StarsBeyond.MOD_ID, "basic_coking_oven");
 
         @Override
-        public BasicCokingOvenRecipe fromJson(ResourceLocation id, JsonObject json) {
+        public CokingOvenRecipe fromJson(ResourceLocation id, JsonObject json) {
             ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(json, "output"));
 
             JsonArray ingredients = GsonHelper.getAsJsonArray(json, "ingredients");
@@ -90,11 +90,11 @@ public class BasicCokingOvenRecipe implements Recipe<SimpleContainer> {
             for(int i = 0; i < inputs.size(); i++){
                 inputs.set(i, Ingredient.fromJson(ingredients.get(i)));
             }
-            return new BasicCokingOvenRecipe(id, output, inputs);
+            return new CokingOvenRecipe(id, output, inputs);
         }
 
         @Override
-        public @Nullable BasicCokingOvenRecipe fromNetwork(ResourceLocation id, FriendlyByteBuf buf) {
+        public @Nullable CokingOvenRecipe fromNetwork(ResourceLocation id, FriendlyByteBuf buf) {
             NonNullList<Ingredient> inputs = NonNullList.withSize(buf.readInt(), Ingredient.EMPTY);
 
             for(int i = 0; i < inputs.size(); i++){
@@ -102,11 +102,11 @@ public class BasicCokingOvenRecipe implements Recipe<SimpleContainer> {
             }
 
             ItemStack output = buf.readItem();
-            return new BasicCokingOvenRecipe(id, output, inputs);
+            return new CokingOvenRecipe(id, output, inputs);
         }
 
         @Override
-        public void toNetwork(FriendlyByteBuf buf, BasicCokingOvenRecipe recipe) {
+        public void toNetwork(FriendlyByteBuf buf, CokingOvenRecipe recipe) {
             buf.writeInt(recipe.getIngredients().size());
 
             for(Ingredient ing : recipe.getIngredients()){

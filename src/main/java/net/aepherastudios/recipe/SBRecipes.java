@@ -11,8 +11,8 @@ public class SBRecipes {
     public static final DeferredRegister<RecipeSerializer<?>> SERIALIZERS =
             DeferredRegister.create(ForgeRegistries.RECIPE_SERIALIZERS, StarsBeyond.MOD_ID);
 
-    public static final RegistryObject<RecipeSerializer<BasicCokingOvenRecipe>>  BASIC_COKING_OVEN_SERIALIZER =
-            SERIALIZERS.register("basic_coking_oven", ()-> BasicCokingOvenRecipe.Serializer.INSTANCE);
+    public static final RegistryObject<RecipeSerializer<CokingOvenRecipe>>  COKING_OVEN_SERIALIZER =
+            SERIALIZERS.register("coking_oven", ()-> CokingOvenRecipe.Serializer.INSTANCE);
 
     public static void register(IEventBus eventBus) {
         SERIALIZERS.register(eventBus);

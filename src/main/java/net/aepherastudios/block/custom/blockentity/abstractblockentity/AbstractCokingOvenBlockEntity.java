@@ -1,6 +1,5 @@
 package net.aepherastudios.block.custom.blockentity.abstractblockentity;
 
-import com.google.common.collect.Maps;
 import net.aepherastudios.recipe.CokingOvenRecipe;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -22,7 +21,8 @@ import org.jetbrains.annotations.Nullable;
 
 public abstract class AbstractCokingOvenBlockEntity extends BaseContainerBlockEntity implements WorldlyContainer, RecipeHolder, StackedContentsCompatible {
     protected static final int INPUT_SLOT = 0;
-    protected static final int FLUIL_SLOT = 1;
+    protected static final int FUEL_SLOT = 1;
+
 
 
     private final RecipeType<CokingOvenRecipe> pRecipeType;

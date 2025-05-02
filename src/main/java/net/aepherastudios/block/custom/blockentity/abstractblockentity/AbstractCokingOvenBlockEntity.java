@@ -22,7 +22,8 @@ import org.jetbrains.annotations.Nullable;
 public abstract class AbstractCokingOvenBlockEntity extends BaseContainerBlockEntity implements WorldlyContainer, RecipeHolder, StackedContentsCompatible {
     protected static final int INPUT_SLOT = 0;
     protected static final int FUEL_SLOT = 1;
-
+    protected static final int OUT1_SLOT = 2;
+    protected static final int OUT2_SLOT = 3;
 
 
     private final RecipeType<CokingOvenRecipe> pRecipeType;

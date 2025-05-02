@@ -72,13 +72,13 @@ public class CokingOvenRecipe implements Recipe<SimpleContainer> {
         private Type() {}
 
         public static final Type INSTANCE = new Type();
-        public static final String ID = "basic_coking_oven";
+        public static final String ID = "coking_oven";
     }
 
     public static class Serializer implements RecipeSerializer<CokingOvenRecipe>{
         public static final Serializer INSTANCE = new Serializer();
         public static final ResourceLocation ID =
-                new ResourceLocation(StarsBeyond.MOD_ID, "basic_coking_oven");
+                new ResourceLocation(StarsBeyond.MOD_ID, "coking_oven");
 
         @Override
         public CokingOvenRecipe fromJson(ResourceLocation id, JsonObject json) {
@@ -90,6 +90,7 @@ public class CokingOvenRecipe implements Recipe<SimpleContainer> {
             for(int i = 0; i < inputs.size(); i++){
                 inputs.set(i, Ingredient.fromJson(ingredients.get(i)));
             }
+
             return new CokingOvenRecipe(id, output, inputs);
         }
 

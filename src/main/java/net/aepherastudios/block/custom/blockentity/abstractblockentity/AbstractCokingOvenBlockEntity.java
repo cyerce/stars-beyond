@@ -24,7 +24,7 @@ public abstract class AbstractCokingOvenBlockEntity extends BaseContainerBlockEn
     protected static final int FUEL_SLOT = 1;
     protected static final int OUT1_SLOT = 2;
     protected static final int OUT2_SLOT = 3;
-
+    protected static final int FLUID_SLOT = 4;
 
     private final RecipeType<CokingOvenRecipe> pRecipeType;
     public AbstractCokingOvenBlockEntity(BlockEntityType<?> pType, BlockPos pPos, BlockState pBlockState, RecipeType<CokingOvenRecipe> pRecipeType) {

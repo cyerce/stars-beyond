@@ -3,7 +3,9 @@ package net.aepherastudios.block.custom.blockentity.abstractblockentity;
 import net.aepherastudios.recipe.CokingOvenRecipe;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.NonNullList;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.Container;
 import net.minecraft.world.WorldlyContainer;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -26,7 +28,9 @@ public abstract class AbstractCokingOvenBlockEntity extends BaseContainerBlockEn
     protected static final int OUT2_SLOT = 3;
     protected static final int FLUID_SLOT = 4;
 
-    private final RecipeType<CokingOvenRecipe> pRecipeType;
+    protected NonNullList<ItemStack> items;
+
+    final RecipeType<CokingOvenRecipe> pRecipeType;
     public AbstractCokingOvenBlockEntity(BlockEntityType<?> pType, BlockPos pPos, BlockState pBlockState, RecipeType<CokingOvenRecipe> pRecipeType) {
         super(pType, pPos, pBlockState);
         this.pRecipeType = pRecipeType;
@@ -70,7 +74,7 @@ public abstract class AbstractCokingOvenBlockEntity extends BaseContainerBlockEn
 
     @Override
     public int getContainerSize() {
-        return 0;
+        return this.items.size();
     }
 
     @Override
@@ -80,7 +84,7 @@ public abstract class AbstractCokingOvenBlockEntity extends BaseContainerBlockEn
 
     @Override
     public ItemStack getItem(int i) {
-        return null;
+        return this.items.get(i);
     }
 
     @Override
@@ -95,17 +99,17 @@ public abstract class AbstractCokingOvenBlockEntity extends BaseContainerBlockEn
 
     @Override
     public void setItem(int i, ItemStack itemStack) {
-
+        this.items.set(i, itemStack);
     }
 
     @Override
     public boolean stillValid(Player player) {
-        return false;
+        return Container.stillValidBlockEntity(this, player);
     }
 
     @Override
     public void clearContent() {
-
+        this.items.clear();
     }
 
     @Override
